@@ -32,3 +32,46 @@ pip freeze > requirements.txt
 --- 
 ## In-Case of Failure
 If you fail to do the setup by yourself, then please revisit the previous repositories where you have done the setup and follow those steps.
+
+
+# King County Housing – Exploratory Data Analysis
+
+## Project Overview
+This project performs an exploratory data analysis (EDA) on housing data from
+King County, USA. The goal is to understand key factors influencing house
+prices and to provide data-driven recommendations for a selected client.
+
+## Data Source
+The data originates from a PostgreSQL database and consists of two tables:
+house details and house sales. The tables were joined using a LEFT JOIN and
+exported locally as a CSV file. The dataset is intentionally excluded from
+version control as required by the assignment.
+
+## Methodology
+The analysis follows a structured EDA workflow:
+1. Data understanding and cleaning
+2. Formulation of research questions and hypotheses
+3. Distribution analysis
+4. Relationship and correlation analysis
+5. Client-focused recommendations
+
+## Client Focus
+The selected client is **Jennifer Montgomery**, a high-budget buyer interested
+in waterfront properties with strong resale potential within one year.
+
+## Key Findings
+- House prices are strongly influenced by living area, construction grade,
+  and waterfront access.
+- Waterfront properties show significantly higher prices.
+- Recently renovated, high-grade houses in top neighborhoods offer the best
+  short-term resale potential.
+
+## Presentation
+A high-level presentation summarizing the methodology and recommendations for
+non-technical stakeholders is provided in the `slides/` folder as a PDF.
+
+## Requirements
+- Python 3
+- pandas
+- matplotlib
+- seaborn
